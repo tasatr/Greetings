@@ -1,0 +1,583 @@
+{
+  "contractName": "Greetings",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "message",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "setMessage",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"message\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"setMessage\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Greetings.sol\":\"Greetings\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Greetings.sol\":{\"keccak256\":\"0x8bed5d311a1d78a2ecfdafd12a0eba9d04d9cded82ec579a35de6d76b53d82fd\",\"urls\":[\"bzz-raw://54e2ecf9b26baa75179040812dfb1b5af515a1433c5991334ec5b533ee379dbd\",\"dweb:/ipfs/Qmf12VqcWXhSp98B9FrB9w1q7YF7S8YEGVeDdut6RwFz6L\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040518060400160405280600681526020017f54657374203100000000000000000000000000000000000000000000000000008152506000908051906020019061005c929190610062565b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b61028e806101166000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063e21f37ce1461003b578063e90847f4146100be575b600080fd5b6100436100c8565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610083578082015181840152602081019050610068565b50505050905090810190601f1680156100b05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100c6610166565b005b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561015e5780601f106101335761010080835404028352916020019161015e565b820191906000526020600020905b81548152906001019060200180831161014157829003601f168201915b505050505081565b6040518060400160405280600681526020017f5465737420320000000000000000000000000000000000000000000000000000815250600090805190602001906101b19291906101b4565b50565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101f557805160ff1916838001178555610223565b82800160010185558215610223579182015b82811115610222578251825591602001919060010190610207565b5b5090506102309190610234565b5090565b61025691905b8082111561025257600081600090555060010161023a565b5090565b9056fea265627a7a72315820455ff19228fcd0b75a7de5e8252126309cb538ca5e0b97bd29676c6073d8eb3664736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063e21f37ce1461003b578063e90847f4146100be575b600080fd5b6100436100c8565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610083578082015181840152602081019050610068565b50505050905090810190601f1680156100b05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100c6610166565b005b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561015e5780601f106101335761010080835404028352916020019161015e565b820191906000526020600020905b81548152906001019060200180831161014157829003601f168201915b505050505081565b6040518060400160405280600681526020017f5465737420320000000000000000000000000000000000000000000000000000815250600090805190602001906101b19291906101b4565b50565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101f557805160ff1916838001178555610223565b82800160010185558215610223579182015b82811115610222578251825591602001919060010190610207565b5b5090506102309190610234565b5090565b61025691905b8082111561025257600081600090555060010161023a565b5090565b9056fea265627a7a72315820455ff19228fcd0b75a7de5e8252126309cb538ca5e0b97bd29676c6073d8eb3664736f6c63430005100032",
+  "sourceMap": "28:173:0:-;;;80:52;8:9:-1;5:2;;;30:1;27;20:12;5:2;80:52:0;108:18;;;;;;;;;;;;;;;;;:7;:18;;;;;;;;;;;;:::i;:::-;;28:173;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "28:173:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:173:0;;;;;;;;;;;;;;;;;;;;;;;;52:21;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;52:21:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;138:60;;;:::i;:::-;;52:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;138:60::-;174:18;;;;;;;;;;;;;;;;;:7;:18;;;;;;;;;;;;:::i;:::-;;138:60::o;28:173::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.16;\r\n\r\ncontract Greetings {\r\n  string public message;\r\n\r\n  constructor() public {\r\n    message = 'Test 1';\r\n  }\r\n\r\n  function setMessage() public {\r\n    message = 'Test 2';\r\n  }\r\n}\r\n",
+  "sourcePath": "C:\\Users\\Triinu Tasa\\Kool\\Blockchain\\Project\\HelloWorld\\contracts\\Greetings.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Greetings.sol",
+    "exportedSymbols": {
+      "Greetings": [
+        20
+      ]
+    },
+    "id": 21,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 20,
+        "linearizedBaseContracts": [
+          20
+        ],
+        "name": "Greetings",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "message",
+            "nodeType": "VariableDeclaration",
+            "scope": 20,
+            "src": "52:21:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "52:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10,
+              "nodeType": "Block",
+              "src": "101:31:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 8,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6,
+                      "name": "message",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "108:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "546573742031",
+                      "id": 7,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "118:8:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_19295a529278e94de58157918a1e64f91cb437daefda661f61e0ababcd26aea8",
+                        "typeString": "literal_string \"Test 1\""
+                      },
+                      "value": "Test 1"
+                    },
+                    "src": "108:18:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 9,
+                  "nodeType": "ExpressionStatement",
+                  "src": "108:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "91:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "101:0:0"
+            },
+            "scope": 20,
+            "src": "80:52:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 18,
+              "nodeType": "Block",
+              "src": "167:31:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 16,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 14,
+                      "name": "message",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "174:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "546573742032",
+                      "id": 15,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "184:8:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_8ada8a631e88c4fce36c00a80331c9811b1f809edd363b1ec57a2c001a70f3a3",
+                        "typeString": "literal_string \"Test 2\""
+                      },
+                      "value": "Test 2"
+                    },
+                    "src": "174:18:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 17,
+                  "nodeType": "ExpressionStatement",
+                  "src": "174:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 19,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setMessage",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "157:2:0"
+            },
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "167:0:0"
+            },
+            "scope": 20,
+            "src": "138:60:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 21,
+        "src": "28:173:0"
+      }
+    ],
+    "src": "0:203:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Greetings.sol",
+      "exportedSymbols": {
+        "Greetings": [
+          20
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            20
+          ],
+          "name": "Greetings",
+          "scope": 21
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "message",
+              "scope": 20,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "52:6:0"
+              }
+            ],
+            "id": 3,
+            "name": "VariableDeclaration",
+            "src": "52:21:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 20,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4,
+                "name": "ParameterList",
+                "src": "91:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5,
+                "name": "ParameterList",
+                "src": "101:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3,
+                              "type": "string storage ref",
+                              "value": "message"
+                            },
+                            "id": 6,
+                            "name": "Identifier",
+                            "src": "108:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "546573742031",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Test 1\"",
+                              "value": "Test 1"
+                            },
+                            "id": 7,
+                            "name": "Literal",
+                            "src": "118:8:0"
+                          }
+                        ],
+                        "id": 8,
+                        "name": "Assignment",
+                        "src": "108:18:0"
+                      }
+                    ],
+                    "id": 9,
+                    "name": "ExpressionStatement",
+                    "src": "108:18:0"
+                  }
+                ],
+                "id": 10,
+                "name": "Block",
+                "src": "101:31:0"
+              }
+            ],
+            "id": 11,
+            "name": "FunctionDefinition",
+            "src": "80:52:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setMessage",
+              "scope": 20,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 12,
+                "name": "ParameterList",
+                "src": "157:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 13,
+                "name": "ParameterList",
+                "src": "167:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3,
+                              "type": "string storage ref",
+                              "value": "message"
+                            },
+                            "id": 14,
+                            "name": "Identifier",
+                            "src": "174:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "546573742032",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Test 2\"",
+                              "value": "Test 2"
+                            },
+                            "id": 15,
+                            "name": "Literal",
+                            "src": "184:8:0"
+                          }
+                        ],
+                        "id": 16,
+                        "name": "Assignment",
+                        "src": "174:18:0"
+                      }
+                    ],
+                    "id": 17,
+                    "name": "ExpressionStatement",
+                    "src": "174:18:0"
+                  }
+                ],
+                "id": 18,
+                "name": "Block",
+                "src": "167:31:0"
+              }
+            ],
+            "id": 19,
+            "name": "FunctionDefinition",
+            "src": "138:60:0"
+          }
+        ],
+        "id": 20,
+        "name": "ContractDefinition",
+        "src": "28:173:0"
+      }
+    ],
+    "id": 21,
+    "name": "SourceUnit",
+    "src": "0:203:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x8C9A07Fb655489Ec9F5DaDdB7227e2c24D7c2576",
+      "transactionHash": "0x09fd6f6da84da8a62fd5bde6577f7b9e2bab9979b9d1bcf18b2ffbff0f677fc1"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-10-06T18:50:20.501Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
