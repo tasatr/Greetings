@@ -7,6 +7,10 @@ contract Greetings {
     message = 'Test 1';
   }
 
+  function getMessage() public view returns(string memory){
+    return message;
+  }
+
   function setMessage() public {
     message = 'Test 2';
   }
