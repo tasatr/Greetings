@@ -12,7 +12,7 @@ contract EBayClone {
   uint productCounter;
   mapping (uint => Product) public products;
 
-  function sellProduct(string memory _name, string memory _description, uint _price) public {
+  function sellProduct(string memory _name, string memory _description, uint _price) public returns (uint) {
     Product memory newProduct = Product({
       id: productCounter,
       seller: msg.sender,
@@ -24,6 +24,7 @@ contract EBayClone {
 
     products[productCounter] = newProduct;
     productCounter++;
+    return productCounter;
   }
 
   function getNumberOfProducts() public view returns (uint) {

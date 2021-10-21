@@ -24,8 +24,7 @@ contract("Greetings", accounts => {
     console.log(accounts);
   });
   it('Has a default message', () => {
-    console.log("in here");
-
+  
     return Greetings.deployed()
       .then(instance => {
         greet = instance;
