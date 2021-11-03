@@ -10,6 +10,9 @@ contract EBayClone {
   }
 
   uint productCounter;
+  constructor() public {
+      productCounter = 0;   // Using State variable
+   }
   mapping (uint => Product) public products;
 
   function sellProduct(string memory _name, string memory _description, uint _price) public returns (uint) {

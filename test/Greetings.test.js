@@ -14,17 +14,27 @@ const Greetings = artifacts.require("Greetings");
 
 beforeEach(async () => {
   accounts = await web3.eth.getAccounts();
-  console.log(accounts);
   // greetings = await new web3.eth.Contract(JSON.parse(interface)).deploy({ data: bytecode, arguments: [Hello World'] })
   // .send({from: accounts[0], gas:'1000000'})
 });
 
-contract("Greetings", accounts => {
-  it("Deploys a greetings contract", () => {
-    console.log(accounts);
+contract("Greeter: update greeting", () => {
+  describe("setGreeting(string)", () => {
+    it("sets greeting to passed in string", async () => {
+      const greeter = await Greetings.deployed()
+      const expected = "Hi there!";
+
+      await greeter.setMessage(expected);
+      const actual = await greeter.getMessage();
+      console.log(actual);
+      assert.equal(actual, expected, "greeting was not updated");
+    });
   });
+});
+
+contract("Greetings", accounts => {
   it('Has a default message', () => {
-  
+
     return Greetings.deployed()
       .then(instance => {
         greet = instance;
@@ -37,7 +47,6 @@ contract("Greetings", accounts => {
           "Test 1",
           "Hello World wasn't returned"
         );
-
-      });
+      })
     });
 });

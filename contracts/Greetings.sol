@@ -1,17 +1,17 @@
 pragma solidity ^0.5.16;
 
 contract Greetings {
-  string public message;
+  string private _message;
 
   constructor() public {
-    message = 'Test 1';
+    _message = 'Test 1';
   }
 
   function getMessage() public view returns(string memory){
-    return message;
+    return _message;
   }
 
-  function setMessage() public {
-    message = 'Test 2';
+  function setMessage(string memory newMessage) public {
+    _message = newMessage;
   }
 }
